@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de gestão acadêmica</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div>
+        <form>
+            <h3>Sistema de gestão acadêmica</h3>
+            <p>Manutenção de usuário do sistema interno</p>
+            <div class="col">
+                <div class="center">
+                    <label for="Login">Login:</label>
+                </div>
+                <input type="text" id="Login" name="Login" required>
+            </div>
+
+            <div class="col">
+                <div class="center">
+                    <label for="password">Senha:</label>
+                </div>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="col">
+                <div class="center">
+                    <label for="status">Status</label>
+                </div>
+                <select name="status" id="status">
+                    <option value="Inativo">Inativo</option>
+                    <option value="Ativo">Ativo</option>
+                </select>
+            </div>
+            <div class="radio-buttons col">
+                <div class="center">
+                    <label for="">Tipo</label>
+                </div>
+                <label> <input type="radio" name="tipo" value="tecnico"> Técnico </label>
+                <label> <input type="radio" name="tipo" value="professor"> Professor </label>
+                <label> <input type="radio" name="tipo" value="aluno"> Aluno </label>
+            </div>
+
+            <div class="col">
+                <div class="center">
+                    <label for="criacao">Data Criação</label>
+                </div>
+                <input type="text">
+            </div>
+
+            <div class="radio-buttons col">
+                <div class="center">
+                    <label for="">Perfil</label>
+                </div>
+                <label> <input type="radio" name="perfil" value="Convidado"> Convidado </label>
+                <label> <input type="radio" name="perfil" value="Administrador"> Administrador </label>
+            </div>
+
+            <div class="col">
+                <div class="center">
+                    <label for="obs">Observações</label>
+                </div>
+                <textarea class="autoWidth" name="obs" id="obs"></textarea>
+            </div>
+
+            <div class="modulos col">
+                <div class="center">
+                    <label for="modulos">Módulos</label>
+                </div>
+                <div class="checkbox">
+                    <label class="space"> <input type="checkbox" name="compras"> Compras</label>
+                    <label class="space"> <input type="checkbox" name="compras"> Biblioteca</label>
+                    <label class="space"> <input type="checkbox" name="compras"> Acadêmico</label>
+                    <label class="space"> <input type="checkbox" name="compras"> Documentação</label>
+                    <label class="space"> <input type="checkbox" name="compras"> Recursos Humanos</label>
+                </div>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Excluir</button>
+        </form>
+    </div>
+</body>
+
+</html>

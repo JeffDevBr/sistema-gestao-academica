@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 80px 0;
+    text-align: start;
+    padding: 10px;
+    background-color: #f7f6f6;
+}
+
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgb(241, 178, 96);
+    margin: 0 auto;
+    padding: 8px;
+}
+
+p {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+label {
+    margin: 15px 0;
+    width: 130px;
+}
+
+input[type="text"],
+input[type="password"] {
+    flex-grow: 1;
+    width: 70%;
+    padding: 12px;
+    margin: 0 70px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    padding: 8px;
+}
+
+.modulos {
+    display: flex;
+
+}
+
+.space {
+    width: 180px;
+}
+
+.autoWidth {
+    width: 70%;
+    height: 120px;
+    overflow-y: scroll;
+}
+
+.checkbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+button {
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 1.1em;
+    margin: 20px 10px;
+    color: #fff;
+}
+
+button:hover{
+    opacity: 0.8;
+    transform: translateY(1px);
+}
+
+button[type="submit"] {
+    background-color: green;
+}
+
+button[type="reset"]{
+    background-color: rgb(154, 3, 3);
+}
+
+@media (max-width: 600px) {
+
+    body{
+        margin: 20px auto;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        margin: 0 auto;
+    }
+    
+    .center{
+        text-align: center;
+    }
+
+    .autoWidth{
+        width: 95%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .col{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #e5f7e9;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+}
